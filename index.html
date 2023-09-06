@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Carrito de Compras</h2>
+
+    <!-- Lista de productos -->
+    <ul id="lista-productos" style="list-style-type: decimal;">
+        <!-- Los productos se agregarán dinámicamente aquí -->
+    </ul>
+
+    <!-- Precio total del carrito -->
+    <p>Total: $ <span id="total">0</span></p>
+
+    <!-- Botón para realizar la compra -->
+    <button id="comprar-btn">Comprar</button>
+
+    <!-- Agregar productos -->
+    <input type="text" id="producto-nombre" placeholder="Nombre del producto">
+    <input type="number" id="producto-precio" placeholder="Precio del producto">
+    <button id="agregar-producto-btn">Agregar Producto</button>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
